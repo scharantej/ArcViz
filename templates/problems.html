@@ -1,0 +1,9 @@
+
+<ul>
+{% for problem in problems %}
+<li><a href="{{ url_for('problem_details', problem_id=problem_id) }}">{{ problem }}</a></li>
+{% endfor %}
+</ul>
+<a href="{{ url_for('create_problem') }}">Create a new problem</a>
+
+
